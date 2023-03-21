@@ -14,76 +14,103 @@ body {
     font-family: 'Merriweather';
     font-family: 'Poppins', sans-serif;
     background-color: #c9cfe3;
+
+}
+.container {
+    background: #FFFFFF;
+    border-radius: 16px;
+    max-width: 1213px;
+    padding: 30px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-
-}
-.header {
-    
-    .navbar {
-    display: flex;
-    justify-content: space-between;
-    .input {
-        flex: 0 0 20%;
-        border: 1px solid #BFC8E6;
-        border-radius: 4px;
-        padding: 16px;
-        gap: 8px;
-        border: 1px solid #BFC8E6;
-        border-radius: 4px;
-    }
-    .nav-item-container {
-        flex: 0 0 50%;
-        list-style: none;
+    .header {
+        .navbar {
         display: flex;
-        .item {
+        justify-content: space-between;
+        .input {
             flex: 0 0 20%;
+            border: 1px solid #BFC8E6;
+            border-radius: 4px;
             padding: 16px;
-            text-align: center;
-            border-radius: 10px;
-            display: inline-block;
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 24px;
-            cursor: pointer;
-            transition: all 0.2s ease-in-out;
-            &:hover{
-            background-color: #849FFF;
+            gap: 8px;
+            border: 1px solid #BFC8E6;
+            border-radius: 4px;
+        }
+        .nav-item-container {
+            flex: 0 0 50%;
+            list-style: none;
+            display: flex;
+            .item {
+                flex: 0 0 20%;
+                padding: 16px;
+                text-align: center;
+                border-radius: 10px;
+                display: inline-block;
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                cursor: pointer;
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                background-color: #849FFF;
+                }
             }
         }
+        }
     }
-}
-}
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-    .user {
-        flex: 0 0 auto;
-        width: 33.33333%;
-        background-color: #e0e4f2;
-        border: 0px;
-        border-radius: 10px;
-        padding: 10px;
+    .main {
         display: flex;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-            &:hover{
-            border: 1px;
-            border-color: #151B42;
-            }
-            .img-container {
-            img {
-                width: 97px;
-                height: 97px;
-                border-radius: 50%;
-
+        padding: 0px;
+        flex-wrap: wrap;
+        .user {
+            flex: 0 0 auto;
+            width: 32%;
+            background-color: #f8f9fd;
+            border: 2px;
+            border-radius: 10px;
+            padding: 10px 0;
+            margin: 5px;
+            display: flex;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+            & :hover{
+                border: 2px;
+                border-color: #151B42;
+                }
+                .img-container {
+                    flex: 0 0 50%;
+                    img {
+                        width: 97px;
+                        height: 97px;
+                        border-radius: 50%;
+                    }
+                }
+                .decription {
+                    .name {
+                        font-family: 'Merriweather';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 18px;
+                        line-height: 23px;
+                        color: #151B32;
+                        margin-bottom: 15px;
+                    }
+                    .hobby {
+                        .aaa {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 2px 8px;
+                            gap: 10px;border: 1px solid #BFC8E6;
+                            border-radius: 10px;
+                            display: inline-block;
+                        }
+                    }
+                }
             }
         }
-        }
-    }
+}
