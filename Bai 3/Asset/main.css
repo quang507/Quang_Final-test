@@ -154,55 +154,58 @@ body {
   justify-content: space-between;
 }
 .header .navbar .input {
-  flex: 0 0 35%;
+  flex: 0 0 20%;
+  padding: 16px;
+  gap: 8px;
   border: 1px solid #BFC8E6;
   border-radius: 4px;
 }
 .header .navbar .nav-item-container {
-  flex: 0 0 65%;
+  flex: 0 0 50%;
   list-style: none;
   display: flex;
 }
 .header .navbar .nav-item-container .item {
-  flex: 0 0 25%;
-  border-radius: 2px;
+  flex: 0 0 20%;
+  padding: 16px;
+  text-align: center;
+  border-radius: 10px;
   display: inline-block;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
-.header .navbar .nav-item-container .item :hover {
+.header .navbar .nav-item-container .item:hover {
   background-color: #849FFF;
 }
-.infor {
+.main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
 }
-.infor .user {
+.main .user {
   flex: 0 0 auto;
   width: 33.33333%;
-  background-color: #BFC8E6;
+  background-color: #e0e4f2;
   border: 0px;
   border-radius: 10px;
   padding: 10px;
   display: flex;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
-.infor .user :hover {
+.main .user:hover {
   border: 1px;
   border-color: #151B42;
 }
-.infor .user img-container {
-  display: flex;
-  flex: 0 0 auto;
-  width: 33.33333%;
-  height: 97px;
+.main .user .img-container img {
   width: 97px;
-  left: 24px;
-  top: 24px;
-  border-radius: 0px;
+  height: 97px;
+  border-radius: 50%;
 }
