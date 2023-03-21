@@ -190,7 +190,7 @@ body {
 }
 .container .main {
   display: flex;
-  padding: 0px;
+  padding: 50px 0;
   flex-wrap: wrap;
 }
 .container .main .user {
@@ -199,7 +199,7 @@ body {
   background-color: #f8f9fd;
   border: 2px;
   border-radius: 10px;
-  padding: 10px 0;
+  padding: 50px 0;
   margin: 5px;
   display: flex;
   transition: all 0.2s ease-in-out;
